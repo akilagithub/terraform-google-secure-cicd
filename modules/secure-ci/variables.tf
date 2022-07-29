@@ -71,7 +71,7 @@ variable "wet_branch_name" {
 variable "cache_bucket_name" {
   type        = string
   description = "Name of cloudbuild artifact and cache GCS bucket"
-  default     = ""
+  default     = "terraformbucket1"
 }
 
 variable "gar_repo_name_suffix" {
