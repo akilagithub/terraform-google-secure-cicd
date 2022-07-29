@@ -17,11 +17,13 @@
 variable "project_id" {
   type        = string
   description = "Project ID for CICD Pipeline Project"
+  default = "acn-deliverylearning-devops"
 }
 
 variable "primary_location" {
   type        = string
   description = "Region used for key-ring"
+  default = "us-central-1"
 }
 
 variable "manifest_wet_repo" {
@@ -32,6 +34,7 @@ variable "manifest_wet_repo" {
 variable "gar_repo_name" {
   type        = string
   description = "Docker artifact registry repo to store app build images"
+  default = "gcpregistryanthos"
 }
 
 variable "app_deploy_trigger_yaml" {
