@@ -55,6 +55,7 @@ variable "deploy_branch_clusters" {
 variable "cache_bucket_name" {
   description = "cloud build artifact bucket name"
   type        = string
+  default = "terraformbucket1"
 }
 
 variable "additional_substitutions" {
